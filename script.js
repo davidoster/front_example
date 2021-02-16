@@ -12,7 +12,7 @@ const symbolElements = document.getElementsByClassName('symbols')
 for(let i = 0; i < symbolElements.length; i++) {
     symbolElements[i].addEventListener('click', function() {
         if(this.innerText == "AC") {
-            display.innerText = ""
+            display.innerText = "0"
             number1 = 0
             number2 = 0
         }

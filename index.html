@@ -12,34 +12,46 @@
   ". . . ."
   ". . . ."
   "digit0 digit0 . .";
-  background-color: #2196F3;
+  background-color: #505050;
   padding: 10px;
   width: 450px;
 }
-.display { grid-area: display;}
 .digit0  { grid-area: digit0 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
-  font-size: 30px;
+  font-size: 22px;
   text-align: center;
+}
+.display { 
+  background-color: #000;
+  color: #fff;
+  grid-area: display;
+  text-align: right;
+}
+.calculations {
+  background-color: #ff7033;
+}
+.symbols {
+  background-color: #cc7048;
+}
+.equals {
+  background-color: #cc7033;
+}
+.numbers:active {
+  background-color: blueviolet;
 }
 </style>
 </head>
 <body>
-
 <div class="grid-container">
-  <!--<div class="grid-item" id="display"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>-->
-  <div class="grid-item display" id="display"></div>
+  <div class="grid-item display" id="display">0</div>
     
   <div class="grid-item symbols">AC</div>
-  <div class="grid-item symbols">+-</div>
+  <div class="grid-item symbols">&pm;</div>
   <div class="grid-item symbols">%</div>
-  <div class="grid-item caclulations">/</div>
+  <div class="grid-item calculations">/</div>
   
   <div class="grid-item numbers">7</div>
   <div class="grid-item numbers">8</div>
@@ -56,13 +68,11 @@
   <div class="grid-item numbers">3</div>
   <div class="grid-item calculations">+</div> 
 
-  <!--<div class="grid-item numbers">0</div>
-  <div class="grid-item numbers"></div>-->
   <div class="grid-item digit0 numbers">0</div>
   <div class="grid-item numbers">.</div>
-  <div class="grid-item calculations">=</div>
+  <div class="grid-item equals calculations">=</div>
 
-   <script src="script.js"></script>
+  <script src="script.js"></script>
     
 </div>
 
